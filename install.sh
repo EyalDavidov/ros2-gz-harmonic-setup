@@ -18,6 +18,7 @@ sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
 sudo apt update
 sudo apt install -y ros-humble-ros-base
+sudo apt install -y python3-colcon-common-extensions
 
 # ---------- Gazebo Harmonic ----------
 sudo curl https://packages.osrfoundation.org/gazebo.gpg \
@@ -46,5 +47,7 @@ sudo apt install -y \
   ros-humble-tf-transformations
 
 pip install --user transforms3d
+
+
 
 echo "=== Base installation complete ==="
